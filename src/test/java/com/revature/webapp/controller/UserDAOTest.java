@@ -24,7 +24,7 @@ public class UserDAOTest {
         String email = "";
         String password = "";
         UserDAO userDAO = new UserDAO();
-        boolean isValidLogin = UserDAO.login(email, password);
+        boolean isValidLogin = userDAO.login(email, password);
         assertFalse(isValidLogin);
     }
 
